@@ -11,6 +11,9 @@ ReactDOM.render(
     <Router>
         <Route path="/" component="{App}">
             {/* <IndexRoute component={Home}/> */}
+            <Route path="Home" component="{Home}"/>
+            <Route path="about" component="{About}"/>
+            <Route path="contact" component="{Contact}"/>
         </Route>
     </Router>,
 
