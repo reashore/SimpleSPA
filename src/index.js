@@ -1,10 +1,11 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Router, Route} from 'react-router';
+//import {Router, Route, IndexRoute} from 'react-router';
 import registerServiceWorker from './registerServiceWorker';
 // eslint-disable-next-line
-import {Router, Route, IndexRoute} from 'react-router';
-//import Home from './Home';
+import Home from './Components/Home';
 
 ReactDOM.render(
     <Router>
