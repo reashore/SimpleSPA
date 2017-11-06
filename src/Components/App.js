@@ -1,21 +1,21 @@
 
 import React, { Component } from 'react';
+import {Link, IndexLink} from 'react-router';
 import '../App.css';
-import Home from './Home';
 
 class App extends Component {
   render(){
     return (
       <div>
         <h1>Simple SPA</h1>
-        <ul>
-          <li>Home</li>
-          <li>Contact</li>
-          <li>About</li>
+        <ul className="header">
+          <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
+          <li><Link to="/about" activeClassName="active">About</Link></li>
+          <li><Link to="/contact" activeClassName="active">Contact</Link></li>
         </ul>
 
-        <div classname="content">
-          <Home/>
+        <div className="content">
+          {this.props.children}
         </div>
       </div>
     );
